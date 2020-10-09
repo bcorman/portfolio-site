@@ -1,6 +1,8 @@
 header {
   display: grid;
-  grid-template-columns: 10% 20% auto 10%;
+  grid-template-columns:
+    10% minmax(min-content, 10%) 10% minmax(min-content, auto)
+    10%;
 }
 
 #header_site_name {
@@ -10,7 +12,7 @@ header {
 }
 
 #header_menu {
-  grid-column: 3;
+  grid-column: 4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -20,7 +22,6 @@ header {
   justify-self: center;
   text-decoration: none;
   color: rgb(78, 70, 70);
-  font-size: 24px;
-  font-family: 'Geneva', sans-serif;
+  font-size: 22px;
   font-weight: 600;
 }
