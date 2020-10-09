@@ -1,0 +1,26 @@
+header {
+  display: grid;
+  grid-template-columns: 10% 20% auto 10%;
+}
+
+#header_site_name {
+  align-self: flex-end;
+  grid-column: 2;
+  margin: 12px 0px 0px;
+}
+
+#header_menu {
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header_link {
+  align-self: flex-end;
+  justify-self: center;
+  text-decoration: none;
+  color: rgb(78, 70, 70);
+  font-size: 24px;
+  font-family: 'Geneva', sans-serif;
+  font-weight: 600;
+}
