@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto:100,300,400");
+
+:root {
+  --blue: #4e8ca7;
+}
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -7,11 +12,27 @@ body {
   margin: 0px;
   padding: 0px;
   min-height: 100vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Raleway", sans-serif;
+  color: var(--blue);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr minmax(min-content, 1fr) 1fr;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
 }

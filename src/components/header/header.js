@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "gatsby";
 import "./header.css";
 
-const linkMenu = ["About", "Projects", "Blog", "Contact"].map((linkTitle, i) => {
-    return (
-        <Link key={i} className="header_link" to={`/${linkTitle.toLowerCase()}`}>{linkTitle}</Link>
-    );
-});
 
 const Header = () => {
+    const linkMenu = ["Projects", "Blog"].map((linkTitle, i) => {
+        return (
+            <Link key={i} className="header_link" to={`/${linkTitle.toLowerCase()}`}>{linkTitle}</Link>
+        );
+    });
+    
     return (
         <header>
             <Link to="/" id="header_site_name" className="header_link">Logo</Link>

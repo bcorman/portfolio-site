@@ -1,0 +1,45 @@
+.about_section {
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1fr;
+}
+
+.about_section p {
+  text-align: center;
+}
+
+.contact_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact_list li {
+  margin: 0px 36px;
+  font-size: 36px;
+}
+.contact_list a {
+  color: inherit;
+}
+.contact_list svg,
+.contact_list svg:visited {
+  transition: all 0.25s;
+  transform-origin: 50% 50%;
+  margin: 0px 6px 6px;
+}
+
+.contact_list svg:hover,
+.contact_list a:focus > svg {
+  transform: scale(1.2);
+}
+.contact_list a:hover,
+.contact_list a:focus {
+  border-bottom: 3px solid var(--blue);
+  border-radius: 4px;
+  transition: ease 0.25s;
+}
+/* todo: improve transition of border-bottom on hover/focus  */
+/* Create new canvas element to appear/disappear below icon */
